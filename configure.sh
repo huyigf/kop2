@@ -9,14 +9,14 @@ cat << EOF > /etc/v2ray/config.json
         "protocol": "vmess",
         "settings": {
             "clients": [{
-                "id": "2112b632-fb6c-4781-bb42-d4d310aa532f",
+                "id": "8e428e76-4257-4b26-a25c-85e89ee1e8a2",
                 "alterId": 0
             }]
         },
         "streamSettings": {
             "network": "ws",
             "wsSettings": {
-                "path": "/laowang"
+                "path": "/nnoop"
             }
         }
     }],
@@ -28,4 +28,4 @@ EOF
 
 #Run V2ray
 
-/usr/bin/v2ray/v2ray -config=/etc/v2ray/config.json
+/usr/bin/v2ray/v2ray run -config=/etc/v2ray/config.json
